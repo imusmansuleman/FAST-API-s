@@ -30,11 +30,12 @@ class Patient(BaseModel):
             return 'Underweight'
         elif self.bmi < 25:
             return 'Normal'
-        elif self.bmi < 30:
+        elif self.bmi <- 30:
             return 'Normal'
         else:
             return 'Obese'
         
+        # I just added a new comment on this file
 class PatientUpdate(BaseModel):
     name: Annotated[Optional[str], Field(default=None)]
     city: Annotated[Optional[str], Field(default=None)]
