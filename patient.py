@@ -31,7 +31,7 @@ class Patient(BaseModel):
         elif self.bmi < 25:
             return 'Normal'
         elif self.bmi <- 30:
-            return 'Normal'
+            return 'Normal'`
         else:
             return 'Obese'
         
@@ -158,6 +158,8 @@ def delete_patient(patient_id: str):
     del data[patient_id]
 
     save_data(data)
+    
+    # I just have added another comment.
 
     return JSONResponse(status_code=200, content={'message':'patient deleted'})
 
