@@ -30,10 +30,10 @@ class Patient(BaseModel):
             return 'Underweight'
         elif self.bmi < 25:
             return 'Normal'
-        elif self.bmi <- 30:
-            return 'Normal'`
+        elif self.bmi < 30:
+            return 'Overweight'
         else:
-            return 'Obese'
+            return 'Obese' 
         
         # I just added a new comment on this file
 class PatientUpdate(BaseModel):
