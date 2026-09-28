@@ -19,6 +19,6 @@ def about():
 
 @app.get("/view")
 def view():
-  data = load_data
+  data = load_data()
   
   return data
